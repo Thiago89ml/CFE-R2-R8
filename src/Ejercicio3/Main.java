@@ -56,11 +56,11 @@ public class Main {
         }
     }
 
-
     public static boolean equipoSigueVivo(Campeon[] equipo) {
-        for (Campeon c : equipo) {
-            if (c.getSalud() > 0)
+        for (int i = 0; i < equipo.length; i++) {
+            if (equipo[i].getSalud() > 0) {
                 return true;
+            }
         }
         return false;
     }
